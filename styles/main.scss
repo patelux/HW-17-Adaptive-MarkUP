@@ -121,9 +121,9 @@ justify-content: space-between;
 
 }
 .blog_item {
-display: flex;
-flex-direction: column;
-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .section-blog_title {
     color: $secondaryTextColor;
