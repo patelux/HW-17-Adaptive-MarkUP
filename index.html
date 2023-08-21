@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/main.min.css" />
+
+  <title>Manifest</title>
+
+  <link rel="icon" href="./img/favicon2.svg">
+</head>
+
+<body>
+  <div class="page_wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="main_nav">
+          <div class="logo-wrapper">
+            <a href="#" class="logo_link">
+              <img src="./img/logo.svg" alt="logo" class="logo">
+            </a>
+          </div>
+
+          <div class="nav-list_wrapper">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a class="nav_link current" href="#">home</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#">about</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#">works</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href=".#">blog</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#">contact</a>
+              </li>
+            </ul>
+            <div class="btn-wrapper">
+              <a class="btn-search_link" href="#">
+                <svg class="item-icon" width="17" height="16" >
+                  <use class="icon-search" href="./img/icons.svg#icon-search" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Manifest is a newborn theme. <br>Clean, simple and fast.
+          </h1>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <ul class="blog_list">
+            <!--first block of blog posts  -->
+            <li class="blog_item">
+              <h2 class="section-blog_title">blog</h2>
+              <ul class="blog-card-list">
+                <li class="blog-card-item">
+                  <div class="blog-img-wrapper  w-50">
+                    <picture class="blog__picture">
+                      <source class="blog__img" srcset="
+                        ./img/1_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source class="blog__img" srcset="
+                          ./img/1_tablet-1x.jpg" media="(max-width: 1199px)" />
+                      <img class="blog__img" src="./img/1_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper main-blog  w-50">
+                    <p class="blog-card_subtitle subtitle main-blog">Technology, Interface Design</p>
+                    <h4 class="blog-card_title title main-blog">Using UX Design to Build a<br> Sustainable Future</h4>
+                    <p class="blog-card_subtitle date main-blog">6 May, 2020</p>
+                    <p class="blog-card_text text">Transformation has to be driven by everybody, not just by climate
+                      groups,
+                      and we have a responsibility to use our <br>influence to drive this.
+                      <span>
+                        <a href="#" aria-label="icon-arrow" class="arrow-link"><svg width="23" height="12">
+                            <use class="icon-arrow" href="./img/icons.svg#icon-arrow_right">
+                            </use>
+                          </svg>
+                        </a>
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="blog-card-item reverse-direction">
+                  <div class="blog-img-wrapper  w-50">
+                    <picture class="blog__picture">
+                      <source class="blog__img" srcset="
+                        ./img/2_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source class="blog__img" srcset="
+                          ./img/2_tablet-1x.jpg" media="(max-width: 1199px)" />
+
+                      <img class="blog__img" src="./img/2_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper  w-50">
+                    <p class="blog-card_subtitle subtitle main-blog">Technology, Interface Design</p>
+                    <h4 class="blog-card_title title">Using UX Design to Build a<br>Sustainable Future</h4>
+                    <p class="blog-card_subtitle date main-blog">6 May, 2020</p>
+                    <p class="blog-card_text text main-blog">Transformation has to be driven by everybody, not just by
+                      climate groups,
+                      and we have a responsibility to use our influence to drive this.
+                      <span>
+                        <a href="#" aria-label="icon-arrow" class="arrow-link"><svg width="23" height="12">
+                            <use class="icon-arrow" href="./img/icons.svg#icon-arrow_right">
+                            </use>
+                          </svg>
+                        </a>
+                      </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+            </li>
+            <!--second block of blog posts  -->
+            <li class="blog_item">
+              <div class="blog-title-wrapper">
+                <h2 class="blog-title">Latest Posts</h2>
+                <div class="blog-subtitle_wrapper">
+                  <p class="blog-subtitle subtitle">View All</p>
+                  <a href="#" aria-label="icon-arrow" class="arrow-link"><svg width="23" height="12">
+                      <use class="icon-arrow" href="./img/icons.svg#icon-arrow_right">
+                      </use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <ul class="blog-posts-list">
+                <li class="blog-posts-item ">
+                  <div class="blog-img-wrapper w-30">
+                    <picture class="blog__picture">
+                      <source class="blog__img" srcset="
+                        ./img/3_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source class="blog__img" srcset="
+                          ./img/3_tablet-1x.jpg" media="(max-width: 1199px)" />
+
+                      <img class="blog__img" src="./img/3_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper  w-30">
+                    <div class="blog-subtitle_wrapper post">
+                      <p class="blog-card_subtitle subtitle post">Interface Design</p>
+                      <p class="blog-card_subtitle subtitle post">8 June, 2020</p>
+                    </div>
+                    <h4 class="blog-card_title title post">UX traffic light colours</h4>
+
+                    <p class="blog-card_text text">UI has to make a huge visual difference between warning, an alert and
+                      a
+                      success.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="blog-posts-item">
+                  <div class="blog-img-wrapper w-30">
+                    <picture class="blog__picture">
+                      <source class="blog__img" srcset="
+                        ./img/4_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source class="blog__img" srcset="
+                          ./img/4_tablet-1x.jpg" media="(max-width: 1199px)" />
+                      <img class="blog__img" src="./img/4_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper  w-30">
+                    <div class="blog-subtitle_wrapper post">
+                      <p class="blog-card_subtitle subtitle post">Technology</p>
+                      <p class="blog-card_subtitle subtitle post">6 May, 2020</p>
+                    </div>
+
+                    <h4 class="blog-card_title title post">Using UX Design to Build a Sustainable Future</h4>
+
+                    <p class="blog-card_text text">UI has to make a huge visual difference between warning, an alert and
+                      a success.
+                    </p>
+                  </div>
+                </li>
+                <li class="blog-posts-item">
+                  <div class="blog-img-wrapper w-30">
+                    <picture class="blog__picture">
+                      <source class="blog__img" srcset="
+                        ./img/5_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source class="blog__img" srcset="
+                          ./img/5_tablet-1x.jpg" media="(max-width: 1199px)" />
+
+                      <img class="blog__img" src="./img/5_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper w-30">
+                    <div class="blog-subtitle_wrapper post">
+                      <p class="blog-card_subtitle subtitle post">Visual Design</p>
+                      <p class="blog-card_subtitle subtitle post">8 June, 2020</p>
+                    </div>
+
+                    <h4 class="blog-card_title title post">Creativity vs. UX</h4>
+
+                    <p class="blog-card_text text">Is it possible to create a delightful user experience without
+                      following best UX practices?
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <!--third block of blog posts  -->
+            <li class="blog_item">
+              <div class="blog-title-wrapper">
+                <h2 class="blog-title">Latest Posts</h2>
+                <div class="blog-subtitle_wrapper">
+                  <p class="blog-subtitle subtitle">View All</p>
+                  <a href="#" aria-label="icon-arrow" class="arrow-link"><svg width="23" height="12">
+                      <use class="icon-arrow" href="./img/icons.svg#icon-arrow_right">
+                      </use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <ul class="blog-posts-list">
+                <li class="blog-posts-item ">
+                  <div class="blog-img-wrapper w-50">
+                    <picture class="blog__picture">
+                      <source srcset="
+                        ./img/6_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source srcset="
+                          ./img/6_desktop-1x.jpg" media="(max-width: 1199px)" />
+                      <img class="blog__img" src="./img/6_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper  w-50">
+                    <div class="blog-subtitle_wrapper popular">
+                      <p class="blog-card_subtitle subtitle popular">Interface Design</p>
+                      <p class="blog-card_subtitle subtitle popular">8 June, 2020</p>
+                    </div>
+                    <h4 class="blog-card_title title popular">UX traffic light colours</h4>
+
+                    <p class="blog-card_text text">UI has to make a huge visual difference between warning, an alert and
+                      a
+                      success.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="blog-posts-item">
+                  <div class="blog-img-wrapper w-50">
+                    <picture class="blog__picture">
+                      <source srcset="
+                        ./img/7_mobile-1x.jpg" media="(max-width: 767px)" />
+                      <source srcset="
+                          ./img/7_desktop-1x.jpg 1x" media="(max-width: 1199px)" />
+                      <img class="blog__img" src="./img/7_desktop-1x.jpg" alt="blog-card" />
+                    </picture>
+                  </div>
+                  <div class="blog-description-wrapper  w-50">
+                    <div class="blog-subtitle_wrapper post">
+                      <p class="blog-card_subtitle subtitle popular">Technology</p>
+                      <p class="blog-card_subtitle subtitle popular">6 May, 2020</p>
+                    </div>
+
+                    <h4 class="blog-card_title title popular">Using UX Design to Build a Sustainable Future</h4>
+
+                    <p class="blog-card_text text">UI has to make a huge visual difference between warning, an alert and
+                      a success.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <button class="btn-loadmore">
+                load more
+              </button>
+            </li>
+
+            <!--fourth block of blog posts  -->
+            <li class="blog_item last_section">
+              <div class="last_section-wrapper">
+                <p class="last-section-text">Full-time UI/UX designer <br>Head of Design at VeronaLabs.com
+                </p>
+                <a href="#" aria-label="icon-arrow" class="arrow-link"><svg width="23" height="12">
+                    <use class="icon-arrow" href="./img/icons.svg#icon-arrow_right">
+                    </use>
+                  </svg>
+                </a>
+              </div>
+              <div class="last_section-wrapper">
+                <p class="last-section-description">We work with clients around the world from our headquarters in
+                  Charleston, South Carolina.
+                </p>
+                <p class="last-section-description">We focus on naming, branding, brand narratives, website design and
+                  development, and brand experiences.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+  </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="contacts-wrapper">
+          <p class="contact_title">Need a project?</p>
+          <p class="contact_tel">
+            <a href="tel:+382395550108" class="contact_link_tel">
+              (239) 555-0108
+            </a>
+          </p>
+          <p>
+            <a href="mailto:tanya.hill@example.com" class="contact_link_mail">
+              tanya.hill@example.com
+            </a>
+          </p>
+        </div>
+        <!-- <div class="social-links-wrapper"> -->
+          <ul class="social-link-list">
+            <li class="social-link-item">
+              <a href="#" aria-label="instagram" class="social-link">
+                <svg class="icon-social-link" height="24">
+                  <use class="icon-social" href="./img/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#" aria-label="facebook" class="social-link">
+                <svg class="icon-social-link" height="24">
+                  <use class="icon-social" href="./img/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#" aria-label="twitter" class="social-link">
+                <svg class="icon-social-link" height="24">
+                  <use class="icon-social" href="./img/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="#" aria-label="linkedin" class="social-link">
+                <svg class="icon-social-link" height="24">
+                  <use class="icon-social" href="./img/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        <!-- </div> -->
+      </div>
+      <div class="text-copiryght">© Copyright Manifest Theme. Allrights reserved
+      </div>
+
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>
