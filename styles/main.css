@@ -20,7 +20,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: url("../../img/cursor.svg") 4 5, pointer;
+  cursor: url("../../img/cursor.png") 4 5, pointer;
 }
 
 img {
@@ -30,7 +30,7 @@ img {
 
 button {
   font-family: inherit;
-  cursor: url("../../img/cursor.svg") 4 5, pointer;
+  cursor: url("../../img/cursor.png") 4 5, pointer;
   display: block;
 }
 
