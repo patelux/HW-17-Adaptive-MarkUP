@@ -400,13 +400,14 @@ gap: 23px;
     &:hover,
     &:focus {
         transform: scale(1.1);
-        background-color: $primaryTextColor;        
+        background-color: $primaryTextColor;  
+    }     
     &:hover .icon-social,
     &:focus .icon-social{
-        --color2: #fff;
-    }
-}
-}    
+        --color1: #fff;
+    }}
+
+ 
 .text-copiryght{
     max-width: 340px;
     margin: 0 auto;

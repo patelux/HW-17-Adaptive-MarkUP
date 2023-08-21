@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <symbol id="icon-arrow_right" viewBox="0 0 64 32">
-            <path fill="var(--color1, #7b7b7b)"
+            <path fill="var(--color2, #7b7b7b)"
                 d="M62.747 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.829 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.829s2.047 0.781 2.829 0l12.728-12.728zM0 18h61.333v-4h-61.333v4z">
             </path>
         </symbol>
