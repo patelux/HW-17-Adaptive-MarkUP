@@ -467,7 +467,7 @@ ture, .blog__img {
   background-color: #565656;
 }
 .social-link:hover .icon-social, .social-link:focus .icon-social {
-  --color1: #fff;
+  --color2: #fff;
 }
 
 .text-copiryght {
