@@ -121,12 +121,12 @@ body {
   color: #000000;
   position: relative;
   padding: 22px 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: url("../../img/cursor.png") 4 5, pointer;
 }
-.nav_item:hover a, .nav_item:focus a {
-  color: #FFF;
-  font-weight: 700;
+.nav_item:hover, .nav_item:focus {
+  color: #007FFC;
+  font-weight: 900;
 }
 
 .current::after {
@@ -143,7 +143,7 @@ body {
 .nav_link {
   display: block;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: inherit;
   line-height: calc(17/14);
   letter-spacing: 4.2px;
   text-transform: uppercase;

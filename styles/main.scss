@@ -60,12 +60,12 @@ justify-content: space-between;
     color: $secondaryTextColor;
     position: relative;
     padding: 22px 0;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     cursor: url('../../img/cursor.png') 4 5,
     pointer;
-    &:hover a, &:focus a{
-        color: $accentTextColor;
-        font-weight: 700;
+    &:hover, &:focus{
+        color: $hoverTextColor;
+        font-weight: 900;
         }
 }
 .current::after{
@@ -82,7 +82,7 @@ justify-content: space-between;
 .nav_link {
     display: block;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: inherit;
     line-height: calc(17/14);
     letter-spacing: 4.2px;
     text-transform: uppercase;
