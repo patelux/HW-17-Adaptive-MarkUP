@@ -20,7 +20,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: url("../../img/cursor.png") 4 5, pointer;
 }
 
 img {
@@ -30,7 +29,6 @@ img {
 
 button {
   font-family: inherit;
-  cursor: url("../../img/cursor.png") 4 5, pointer;
   display: block;
 }
 
@@ -68,6 +66,10 @@ body {
     max-width: 700px;
   }
 }
+a, button {
+  cursor: url("../img/cursor.png") 4 5, pointer;
+}
+
 .header {
   background-color: #FFF;
   position: fixed;

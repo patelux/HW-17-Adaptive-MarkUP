@@ -6,6 +6,11 @@
 @import './components/container';
 
 // HEADER-------------------------
+a, button {
+    cursor: url('../img/cursor.png') 4 5,
+    pointer;
+}
+
 .header {
 background-color: $primaryBgColor;
 position: fixed;
