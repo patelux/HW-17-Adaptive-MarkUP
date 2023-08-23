@@ -517,12 +517,9 @@ justify-content: space-between;
         display: inline-block;
         position: fixed;
         top: 0;
-        right: 40px;
+        right: 20px;
         z-index: 10;
         transition: all 0.3s ease;
-        &.is-active{
-            transform: translateX(-100%);
-        }
     }
     // main
     .main {
@@ -656,6 +653,7 @@ justify-content: space-between;
                 border-radius: 2px;
             }
         }
+
     }
     .btn-wrapper{
         margin-right: 64px;
