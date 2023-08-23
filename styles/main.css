@@ -121,6 +121,12 @@ body {
   color: #000000;
   position: relative;
   padding: 22px 0;
+  transition: all 0.3s ease;
+  cursor: url("../../img/cursor.png") 4 5, pointer;
+}
+.nav_item:hover a, .nav_item:focus a {
+  color: #FFF;
+  font-weight: 700;
 }
 
 .current::after {
@@ -143,9 +149,6 @@ body {
   text-transform: uppercase;
   color: inherit;
 }
-.nav_link:hover, .nav_link:focus {
-  font-weight: 700;
-}
 
 .btn-wrapper {
   width: 17px;
@@ -153,7 +156,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
   margin-left: 84px;
+}
+.btn-wrapper a svg use {
+  transition: all 0.3s ease;
+}
+.btn-wrapper:hover a svg {
+  transform: scale(1.2);
 }
 
 .main {
@@ -599,14 +609,12 @@ body {
     text-transform: capitalize;
   }
 
-  .text-copiryght {
-    max-width: 314px;
-    margin-top: 40px;
-    text-align: center;
+  .footer {
+    max-height: 410px;
   }
-
-  .contact_title {
-    margin-bottom: 20px;
+  .footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .footer-wrapper {
@@ -616,17 +624,19 @@ body {
     gap: 40px;
   }
 
-  .footer {
-    max-height: 410px;
-  }
-  .footer .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
   .contacts-wrapper {
     align-items: center;
     justify-content: center;
+  }
+
+  .contact_title {
+    margin-bottom: 20px;
+  }
+
+  .text-copiryght {
+    max-width: 314px;
+    margin-top: 40px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -750,14 +760,12 @@ body {
     text-transform: capitalize;
   }
 
-  .text-copiryght {
-    max-width: 314px;
-    margin-top: 40px;
-    text-align: center;
-  }
-
-  .contact_title {
-    margin-bottom: 20px;
+  .footer {
+    max-height: 421px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .footer-wrapper {
@@ -767,17 +775,28 @@ body {
     gap: 40px;
   }
 
-  .footer {
-    display: none;
-    max-height: 410px;
-  }
-  .footer .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
   .contacts-wrapper {
     align-items: center;
     justify-content: center;
+  }
+
+  .contact_title {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+  }
+
+  .contact_link_tel, .contact_link_mail {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
+
+  .text-copiryght {
+    max-width: 300px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-top: 40px;
   }
 }
