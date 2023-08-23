@@ -832,6 +832,9 @@ body.fixed {
     width: 50px;
     border-radius: 2px;
   }
+  .nav_list a.is-active {
+    right: 20px;
+  }
 
   .btn-wrapper {
     margin-right: 64px;

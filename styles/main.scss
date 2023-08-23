@@ -655,6 +655,9 @@ justify-content: space-between;
                 width: 50px;
                 border-radius: 2px;
             }
+            &.is-active{
+                right: 20px;
+            }
         }
     }
     .btn-wrapper{
