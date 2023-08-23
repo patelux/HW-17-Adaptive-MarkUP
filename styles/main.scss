@@ -59,8 +59,14 @@ justify-content: space-between;
 .nav_item {
     color: $secondaryTextColor;
     position: relative;
-
     padding: 22px 0;
+    transition: all 0.3s ease;
+    cursor: url('../../img/cursor.png') 4 5,
+    pointer;
+    &:hover a, &:focus a{
+        color: $accentTextColor;
+        font-weight: 700;
+        }
 }
 .current::after{
     content: '';
@@ -81,17 +87,21 @@ justify-content: space-between;
     letter-spacing: 4.2px;
     text-transform: uppercase;
     color: inherit;
-    &:hover, &:focus{
-    font-weight: 700;
-    }
 }
 .btn-wrapper{
-   width: 17px;
-   height: 16px;
-   display: flex; 
-   justify-content: center;
-   align-items: center;
-   margin-left: 84px;
+    width: 17px;
+    height: 16px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; 
+    margin-left: 84px;
+   & a svg use{
+    transition: all 0.3s ease;
+   }
+   &:hover a svg{
+    transform: scale(1.2);
+   }
 }
 
 
@@ -432,12 +442,6 @@ gap: 23px;
     margin: 0 auto;
     margin-top: 20px;
 
-    // @include mobile{
-    //     max-width: 300px;
-    //     margin-top: 40px;
-    // }
-    
-
 }   
 // Tablet styles-------------------
 @media screen and (max-width: 1199px) {
@@ -546,20 +550,6 @@ gap: 23px;
     }
 
     // footer
-    .text-copiryght{
-    max-width: 314px;
-    margin-top: 40px; 
-    text-align: center;           
-    }
-    .contact_title {
-    margin-bottom: 20px;
-    }
-    .footer-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
     .footer {
     max-height: 410px;
     & .container{
@@ -567,9 +557,23 @@ gap: 23px;
         padding-bottom: 50px;        
     }
     }
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
     .contacts-wrapper{
         align-items: center;
         justify-content: center;
+    }
+    .contact_title {
+    margin-bottom: 20px;
+    }
+    .text-copiryght{
+    max-width: 314px;
+    margin-top: 40px; 
+    text-align: center;           
     }
 
 }
@@ -646,17 +650,9 @@ gap: 23px;
     .title{    
         font-size: 22px;
         letter-spacing: 2.2px;
-        // &.post{
-        //     font-size: 22px;
-        //     letter-spacing: 2.2px;
-        // }
-        // &.popular{
-        //     font-size: 24px;
-        //     letter-spacing: 2.4px;
-        // }
+
     }
     .blog-img-wrapper.w-50, .blog-img-wrapper.w-30, .blog-title-wrapper.w-50, .blog-title-wrapper.w-30, .blog-img-wrapper.w-50, .blog-img-wrapper.w-30{
-        // flex-basis: 100%;
         width: 100%;
     }
      
@@ -668,16 +664,6 @@ gap: 23px;
         gap: 10px;
     }
 
-
-    // .blog-description-wrapper.main-blog{
-    //         padding: 0;
-    //      }
-    // .blog-card-item.reverse-direction .blog-description-wrapper {
-    //         padding-left: 0;
-    //     }
-    // .blog-card_subtitle.date.main-blog{
-    //         margin-bottom: 40px;
-    //     }
     .blog-posts-list{
         flex-direction: column;
         &.tablet{
@@ -701,15 +687,6 @@ gap: 23px;
         }
     }    
 
-    //  .last_section-wrapper:not(:first-child) {
-    //         text-align: right;
-    //         }
-    //         .last-section-description {
-
-    //             &:not(:last-child){
-    //                 margin-bottom: 20px;
-    //             }}
-
     .section-blog_title {
         color: $secondaryTextColor;
         font-family: 'Red Hat Display', sans-serif;
@@ -721,14 +698,12 @@ gap: 23px;
     }
 
     // footer
-    
-    .text-copiryght{
-    max-width: 314px;
-    margin-top: 40px; 
-    text-align: center;           
-    }
-    .contact_title {
-    margin-bottom: 20px;
+    .footer {
+        max-height: 421px;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        right: 0;
     }
     .footer-wrapper {
         flex-direction: column;
@@ -736,16 +711,23 @@ gap: 23px;
         align-items: center;
         gap: 40px;
     }
-    .footer {display: none;
-    max-height: 410px;
-    & .container{
-        padding-top: 50px;
-        padding-bottom: 50px;        
-    }
-    }
     .contacts-wrapper{
         align-items: center;
         justify-content: center;
+    }    
+    .contact_title {
+        text-align: center;
+        font-size: 32px;
+        letter-spacing: 1.6px;    margin-bottom: 20px;
     }
-
-}
+    .contact_link_tel, .contact_link_mail {
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }    
+    .text-copiryght{
+        max-width: 300px;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        text-align: center;
+        margin-top: 40px;           
+    }}
