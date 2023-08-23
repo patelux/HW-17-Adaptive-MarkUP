@@ -643,7 +643,20 @@ justify-content: space-between;
 // Mobile styles-------------------
 @media screen and (max-width: 767px) {
     // header
-   
+    .nav_list {
+        padding-top: 40px;
+        & a{
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 0;
+            text-align: center;
+            &::after{
+                height: 2px;
+                width: 50px;
+                border-radius: 2px;
+            }
+        }
+    }
     .btn-wrapper{
         margin-right: 64px;
         margin-left: 0;
