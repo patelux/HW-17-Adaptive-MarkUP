@@ -124,7 +124,6 @@ a, button {
   position: relative;
   padding: 22px 0;
   transition: all 0.2s ease;
-  cursor: url("../../img/cursor.png") 4 5, pointer;
 }
 .nav_item:hover, .nav_item:focus {
   color: #007FFC;
