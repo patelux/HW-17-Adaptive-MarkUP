@@ -818,6 +818,21 @@ body.fixed {
   }
 }
 @media screen and (max-width: 767px) {
+  .nav_list {
+    padding-top: 40px;
+  }
+  .nav_list a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .nav_list a::after {
+    height: 2px;
+    width: 50px;
+    border-radius: 2px;
+  }
+
   .btn-wrapper {
     margin-right: 64px;
     margin-left: 0;
