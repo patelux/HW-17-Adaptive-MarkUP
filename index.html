@@ -9,7 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500;600&display=swap"
     rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="./styles/components/hamburgers.css" /> -->
   <link rel="stylesheet" href="./styles/main.min.css" />
 
   <title>Manifest</title>
@@ -19,7 +19,7 @@
 
 <body>
   <div class="page_wrapper">
-    <header class="header">
+    <header class="header ">
       <div class="container">
         <nav class="main_nav">
           <div class="logo-wrapper">
@@ -29,7 +29,7 @@
           </div>
 
           <div class="nav-list_wrapper">
-            <ul class="nav_list">
+            <ul class="nav_list ">
               <li class="nav_item">
                 <a class="nav_link current" href="#">home</a>
               </li>
@@ -57,6 +57,12 @@
 
         </nav>
       </div>
+      <!-- <button type="button" class="hamburger mobile" onclick="toggleMenu(event)">ZZZ</button> -->
+      <button class="hamburger hamburger--spin" type="button" onclick="toggleMenu(event)">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </header>
 
     <main class="main">
@@ -368,8 +374,17 @@
 
     </div>
   </footer>
-  
   </div>
+  <script>
+    function toggleMenu(e){
+      e.preventDefault();
+      document.querySelector('body').classList.toggle('fixed');
+      document.querySelector('.hamburger').classList.toggle('is-active');
+      document.querySelector('.nav_list').classList.toggle('active');
+      document.querySelector('.header').classList.toggle('menu-open');
+      document.querySelector('.footer').classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
